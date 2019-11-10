@@ -20,7 +20,7 @@ We also have async requests for each endpoint!
 
 ## Documentation
 
-Here is a list of all methods and endpoints you can use and where they are contained.
+Here is a quick overview of the API so you can get started very quickly.
 
 If you need an in-use example then please take a look at the [index.php](https://github.com/michel-pi/fortnite-api-php-wrapper/blob/master/test/index.php) in my test folder where i use some of the endpoints.
 
@@ -89,7 +89,9 @@ FortniteApiError::hasLastError();
 Each method in an endpoint has an equivalent async method (i.e. getAsync) which returns an awaitable task. You can await the response at any point in your script.
 
 ```php
+// returns "instantly"
 $task = $api->cosmetics->getAllAsync();
+// retreives the result (the one you get from non-async versions)
 $result = $task->await();
 ```
 
@@ -103,7 +105,22 @@ Objects are mapped with the exact same layout as on [fortnite-api.com/documentat
 If you need more information about properties and methods then please take a look at the actual implementation.
 
 [Endpoints](https://github.com/michel-pi/fortnite-api-php-wrapper/tree/master/src/Components/Endpoints)
+
 [JSON Objects](https://github.com/michel-pi/fortnite-api-php-wrapper/tree/master/src/Components/Objects)
+
+- The `query` parameter
+
+Some methods require a `$query` parameter to work.
+You can find possible query parameters within the [official documentation](https://fortnite-api.com/documentation).
+An example for such an query `array` would be:
+
+```php
+// key value pairs also support arrays as value if the api allows this
+$query = [
+    "rarity" => "uncommon",
+    "hasIcon" => true
+];
+```
 
 ### Contribute
 
