@@ -3,6 +3,7 @@
 # PHP wrapper for [Fortnite-API.com](https://fortnite-api.com)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/michel-pi/fortnite-api-php-wrapper)](https://github.com/michel-pi/fortnite-api-php-wrapper/releases) [![Packagist](https://img.shields.io/packagist/dt/michel-pi/fortnite-api)](https://packagist.org/packages/michel-pi/fortnite-api) [![GitHub issues](https://img.shields.io/github/issues/michel-pi/fortnite-api-php-wrapper)](https://github.com/michel-pi/fortnite-api-php-wrapper/issues) [![MIT License](https://img.shields.io/github/license/michel-pi/fortnite-api-php-wrapper)](https://github.com/michel-pi/fortnite-api-php-wrapper/blob/master/LICENSE)
+
 [![Guzzle HTTP](https://img.shields.io/badge/requires-guzzlehttp%2Fguzzle-blue)](https://github.com/guzzle/guzzle) [![PHP version](https://img.shields.io/packagist/php-v/michel-pi/fortnite-api)](https://www.php.net/)
 
 </div>
