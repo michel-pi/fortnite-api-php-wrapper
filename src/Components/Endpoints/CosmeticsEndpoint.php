@@ -82,7 +82,7 @@ class CosmeticsEndpoint
      */
     public function getAll($language = null)
     {
-        $promise = $this->getAll($language);
+        $promise = $this->getAllAsync($language);
 
         if ($promise == null) {
             return null;
